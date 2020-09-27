@@ -7,6 +7,11 @@ Input
 Integer a (−1000≤a≤1000)
 
 Output
-In ra tan(a)tan(a) (round up to 4 decimal points).
+print tan(a)tan(a) (round up to 4 decimal points).
 """
+import math
+pi = 3.14
+a = int(input())
+a = pi * a / 180
+print('{:.4f}'.format(math.tan(a)))
 
