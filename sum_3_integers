@@ -1,0 +1,18 @@
+'''
+Input 3 integers. Write program to calculate sum a+b+c
+
+Input
+3 integers 0<a,b,c≤10
+integers are with space
+
+Output
+Print with format "a + b + c = res". With a, b, c, res are parameters.
+
+Example:
+input
+3 4 5
+output
+3 + 4 + 5 = 12
+'''
+a, b, c = list(map(int, input().split()))
+print('{} + {} + {} = {}'.format(a, b, c, a + b + c))
