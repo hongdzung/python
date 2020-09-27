@@ -1,0 +1,21 @@
+nums = [2,3,4,5,6,7]
+target = 9
+def two_sum(nums, target):
+    dict = {}
+    res = []
+    for i, value in enumerate(nums):
+        diff = target - value
+        # if the difference is found in "dict" dictionary, insert the index of "diff"  and index of value into array "res"
+        if diff in dict:
+            res.append([dict[diff], i])
+        # if not found, push the index of value into dictionary to let the method run to find it next time. Example 1st time run with first number "2", diff =7 that is not found in dict, then put in dict as dict={0:2}, so on so forth until the last value will have a dict {0:2, 1:3, 2:4, 3:5, 4:6, 5:7}. second time run, will be able to find
+        else:
+            dict[value] = i
+        
+    return res
+result = two_sum(nums, target) # if not write this block, when print "print(two_sum (nums, target))"it will return result [[2, 3], [1, 4], [0, 5]]
+for pair in result:
+    print(pair)
+
+
+    
