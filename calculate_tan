@@ -1,0 +1,12 @@
+"""
+a (degree). Pls write a program to calculate tan(a).
+
+pi = 3.14 .
+
+Input
+Integer a (−1000≤a≤1000)
+
+Output
+In ra tan(a)tan(a) (round up to 4 decimal points).
+"""
+
