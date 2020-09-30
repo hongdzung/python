@@ -1,3 +1,15 @@
+'''
+input
+15
+73
+30
+output
+teenager
+elderly
+adult
+'''
+# Code from here
+# Read each number and put into array
 ages = []
 while True:
   try:
