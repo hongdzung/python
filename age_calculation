@@ -1,8 +1,15 @@
-age = int(input())
-While True: 
-  if age <= 18:
+ages = []
+while True:
+  try:
+    age = int(input()) 
+    ages.append(age)
+  except:
+    break   # if any error, break from while
+
+for age in ages:
+  if age < 18:
     print ("teenager")
-  elif 18 < a <= 50:
+  elif 18 < age <= 50:
     print("adult")
   else:
     print("elderly")
