@@ -1,0 +1,17 @@
+def  checkYear(y):
+    return (y % 400 == 0) or ((y % 4 == 0) and (y % 100 != 0))
+
+m, y = map(int, input().split())
+
+num_day = 0
+if m == 2:
+    if (checkYear(y)):
+        num_day = 29
+    else:
+        num_day = 28
+elif (m == 4 or m == 6 or m == 9 or m == 11):
+    num_day = 30
+else:
+    num_day = 31
+
+print(num_day)
