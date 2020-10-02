@@ -1,0 +1,9 @@
+a, b = map(int, input().split())
+x = -a/b
+if a == 0:
+    if b == 0:
+        print("infinite solutions")
+    else:
+        print("no solution")
+else:
+    print(f"{x:.2f}")
