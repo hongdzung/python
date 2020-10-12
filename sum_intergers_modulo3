@@ -1,0 +1,19 @@
+'''
+Viết chương trình xuất ra màn hình tổng các số chia hết cho 3 trong mảng một chiều các số nguyên dương
+input 
+7 8 3 6 10
+output
+9
+
+input 
+5 7 9 18
+output
+27
+'''
+a = list(map(int,input().split()))
+sum = 0
+for x in a:
+  if x % 3 == 0:
+    sum += x
+
+print(sum)
