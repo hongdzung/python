@@ -20,7 +20,7 @@ l, r = map(int,input().split())
 count = 0
 for x in range(l,r+1):
   if x % 3 ==0 and x % 5==0:
-    break
+    pass
   elif x % 3 ==0 or x % 5 == 0:
     count += 1
 print (count)
