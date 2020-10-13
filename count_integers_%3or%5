@@ -5,10 +5,14 @@ input
 output
 count result
 
-e.g
+e.g 1
 input 2 6
 output: 3
 explain: from range (2,7), 3 and 6 %3=0; 5 % 5 =0. So total 3 counts.
+
+e.g2:
+input 10 15
+output: 2
 '''
 
 l, r = map(int,input().split())
