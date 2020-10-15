@@ -1,0 +1,32 @@
+'''
+Tìm số nguyên dương mm lớn nhất sao cho 1 + 2 + \ldots + m < N1+2+…+m<N.
+
+Input
+Một dòng duy nhất chứa số nguyên dương NN (1 < N < 10^6)(1<N<10
+​6
+​​ ).
+
+Output
+Một dòng duy nhất chứa số nguyên dương mm.
+
+Ví dụ
+inputcopy
+7
+outputcopy
+3
+Giải thích
+Nếu N = 7N=7, tổng lớn nhất bé hơn NN là 1 + 2 + 3 = 61+2+3=6
+'''
+
+N = int(input())
+# calculate sum from 1 to N (exclude N)
+sum = 0
+# max element is saved into variant res
+res = 0
+for x in range(1, N):
+  sum += x
+  if sum < N:
+    res = x 
+  else:
+    break
+print (res)
