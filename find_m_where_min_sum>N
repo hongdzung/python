@@ -25,9 +25,7 @@ sum = 0
 res = 0
 for x in range(1, N):
   sum += x
-  if sum < N:
-    pass
-  else:
+  if sum > N: #no need to check if sum < N as we dont do anything with this condition
     res = x
     break
 print (res)
