@@ -26,4 +26,6 @@ for x in range(1, N):
     
     if x % 2 == 1:
       sum += x
+  else:
+    break  #if not write this, program will run all the number, not optimize
 print (sum)   
