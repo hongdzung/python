@@ -1,11 +1,9 @@
 '''
 Tổng các số lẻ nhỏ hơn N
-Viết chương trình tính tổng các số lẻ nguyên dương nhỏ hơn NN.
+Viết chương trình tính tổng các số lẻ nguyên dương nhỏ hơn N.
 
 Input
-Một dòng duy nhất chứa số nguyên dương NN (1 < N < 10^4)(1<N<10
-​4
-​​ ).
+Một dòng duy nhất chứa số nguyên dương NN (1 < N < 10^4).
 
 Output
 Một dòng duy nhất chứa kết quả.
@@ -16,7 +14,7 @@ inputcopy
 outputcopy
 16
 Giải thích
-Tổng các số lẻ nhỏ hơn 88 là 1 + 3 + 5 + 7 = 161+3+5+7=16.
+Tổng các số lẻ nhỏ hơn 8 là 1 + 3 + 5 + 7 = 16.
 '''
 N = int(input())
 # calculate sum from 1 to N (exclude N)
