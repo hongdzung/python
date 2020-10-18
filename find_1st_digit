@@ -1,0 +1,23 @@
+'''
+Chữ số đầu tiên
+Cho số nguyên dương nn. Hãy tìm chữ số đầu tiên của nn.
+
+Input
+Một dòng duy nhất chứa số nguyên dương nn (\left| n \right| \leq 10^9)(∣n∣≤10
+​9
+​​ ).
+
+Output
+Một dòng duy nhất chứa chữ số đầu tiên của nn.
+
+Ví dụ
+inputcopy
+789
+outputcopy
+7
+'''
+N = int(input())
+res = N
+while res > 10:
+  res= res // 10
+print (res)
